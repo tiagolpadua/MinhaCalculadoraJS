@@ -1,0 +1,11 @@
+{
+  "name": "minha-calculadora-js",
+  "version": "1.0.0",
+  "description": "Projeto de teste de teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
