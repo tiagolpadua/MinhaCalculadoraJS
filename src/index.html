@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src= "calculadora.js"></script>
+    <script>
+        var calc = new Calculadora();
+        function somar() {
+            var a = parseInt(document.getElementById('inputASoma').value);
+            var b = parseInt(document.getElementById('inputBSoma').value);
+            document.getElementById('resultadoSoma').textContent = calc.somar(a, b);
+        }
+
+        function incrementar() {
+            var a = parseInt(document.getElementById('inputIncremento').value);
+            document.getElementById('resultadoIncremento').textContent = calc.incrementar(a);
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="" id="inputASoma"><br>
+    <input type="text" placeholder="" id="inputBSoma"><br>
+    <button onclick="somar()">Calcular Soma</button><br>
+    <span>Resultado: </span><span id="resultadoSoma"></span>
+    <hr>
+    <input type="text" placeholder="" id="inputIncremento"><br>    
+    <button onclick="incrementar()">Calcular Incremento</button><br>
+    <span>Resultado: </span><span id="resultadoIncremento"></span>
+</body>
+</html>
